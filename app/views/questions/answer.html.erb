@@ -1,0 +1,13 @@
+<p>Question: <%= @question %></p>
+
+<p>Answer:</p>
+<% if @question.last == "?" %>
+  <p><%= "Silly question" %></p>
+<% elsif @question == "I am going to work" %>
+  <p><%= "Great!" %></p>
+<% else %>
+  <p><%= "I don't care" %></p>
+<% end %>
+
+
+<%= link_to "Ask New Question", ask_path %>
